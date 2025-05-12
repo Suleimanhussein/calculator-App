@@ -32,7 +32,7 @@ const Calculator = () => {
     };
 
     return (
-        <div className="flex justify-center items-center h-screen bg-gray-900">
+        <div className="flex justify-center items-center h-screen bg-[#EBC23D]">
             <div className="text-[#EBC23D] bg-[#1D1D1B] p-6 rounded-2xl shadow-lg w-72">
                 <h2 className="text-xl font-bold mb-4 text-center">Calculator</h2>
                 <input
