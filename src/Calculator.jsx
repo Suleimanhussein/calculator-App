@@ -4,17 +4,12 @@ const Calculator = () => {
     const [input, setInput] = useState('');
     const [result, setResult] = useState('');
 
-    // let data = [
-    //     '7', '8', '9', '/',
-    //     '4', '5', '6', '*',
-    //     '1', '2', '3', '-',
-    //     'C', '0', '=', '+',
-    // ];
+
     let data = [
-    1, 2, 3, '+',
-    4, 5, 6, '-',
-    7, 8, 9, '/',
-    'C', 0, '=', '+',
+        1, 2, 3, '+',
+        4, 5, 6, '-',
+        7, 8, 9, '/',
+        'C', 0, '=', '+',
     ]
 
 
@@ -37,7 +32,7 @@ const Calculator = () => {
     };
 
     return (
-        <div className="flex justify-center items-center h-screen bg-gray-100">
+        <div className="flex justify-center items-center h-screen bg-gray-900">
             <div className="text-[#EBC23D] bg-[#1D1D1B] p-6 rounded-2xl shadow-lg w-72">
                 <h2 className="text-xl font-bold mb-4 text-center">Calculator</h2>
                 <input
@@ -61,8 +56,8 @@ const Calculator = () => {
                             }}
                             className={`p-3 rounded text-white font-semibold cursor-pointer ${btn === '='
                                 ? 'bg-[#EBC23D] hover:bg-[#EBC23D]'
-                                    : btn === 'C'
-                                        ? 'bg-red-500 hover:bg-red-600'
+                                : btn === 'C'
+                                    ? 'bg-red-500 hover:bg-red-600'
                                     : ' border border-[#EBC23D]  hover:bg-[#EBC23D] hover:text-[#1D1D1B]'
                                 }`}
                         >
@@ -70,7 +65,7 @@ const Calculator = () => {
                         </button>
                     ))}
                 </div>
-                
+
             </div>
         </div>
     );
